@@ -10,7 +10,7 @@ layout: default
         {% if page.subtitle %}
         <h2 class="post-subheading">{{ page.subtitle }}</h2>
         {% endif %}
-        <span class="post-meta">Опубліковано{% if page.author %} {{ page.author }}{% endif %} {{ page.date | date: "%y-%m-%d" }}</span>
+        <span class="post-meta">{% if post.author %}Автор: {{ post.author }},{% endif %} {{ post.date | date: "%Y-%m-%d" }}</span>
       </div>
      </div>
   </div>
