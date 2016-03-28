@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Віктор Жора
-date: 2016-03-28
+date: 2016-03-24
 title: Стратегія кібербезпеки України
 subtitle:
 ---
