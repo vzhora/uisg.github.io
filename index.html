@@ -18,12 +18,12 @@ subtitle: Громадська організація "Українська гр
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      {% if post.author %}Автор: {{ post.author }},{% endif %} {{ post.date | date: "%Y-%m-%d" }}
     </p>
 
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Читати&nbsp;далі]</a>
     </div>
 
    </article>
