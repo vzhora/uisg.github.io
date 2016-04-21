@@ -22,8 +22,7 @@ subtitle: Громадська організація "Українська гр
     </p>
 
     <div class="post-entry">
-      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Читати&nbsp;далі]</a>
+      {{ post.excerpt | strip_html }} <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Читати&nbsp;далі]</a>
     </div>
 
    </article>
@@ -34,12 +33,12 @@ subtitle: Громадська організація "Українська гр
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Наступні пости</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Попередні пости &rarr;</a>
   </li>
   {% endif %}
 </ul>
