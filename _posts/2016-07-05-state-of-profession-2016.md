@@ -3,7 +3,7 @@ layout: post
 title: Стан професії 2016
 subtitle: Візьміть участь у дослідженні
 author: Володимир Стиран
-excerpt-separator: <!-- more -->
+excerpt_separator: <!-- more -->
 ---
 
 Шановні колеги та однодумці!
